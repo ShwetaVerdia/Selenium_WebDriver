@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1">
+	<test name="String Reverse">
+
+		<groups>
+		<run>
+				<include name="SecondaryTest" />
+				<include name="MainTests" />
+			
+			</run>
+		</groups>
+		<classes>
+			<class name="StringReverseTest" />
+		</classes>
+
+	</test>
+	<test name="Parameter Test">
+    <parameter name="suite-param" value="parameter 1" />
+    <parameter name="test-two-param" value="parameter 2" />
+     <parameter name="test-three-param" value="parameter 3" />
+    <classes>
+        <class name="ParameterTest" />
+    </classes>
+</test>
+
+<test name ="Exception Test">
+<classes>
+<class name ="ExceptionTest"></class>
+</classes>
+</test>
+	
+</suite>
+
+  
